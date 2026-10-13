@@ -1,0 +1,47 @@
+:root {
+    --primario: #d6d0d0;
+    --encabezado: #aa3e98;
+    --titulo: #782b6b;
+    --frase: #c45ab2;
+    --borde: #69265e;
+    --superior: #824884;
+    --autor: #503E79;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta {
+    background-color: var(--primario);
+    border-top: 8px solid var(--borde);
+    border-radius: 12px;
+    text-align: center;
+    max-width: 420px;
+    padding: 2.5rem 2rem;
+}
+.tarjeta__logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.tarjeta__encabezado{
+    text-transform: uppercase;
+    color: var(--encabezado);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.40rem;
+}
+.tarjeta__titulo{
+    font-size: 2.5rem;
+    color: var(--titulo);
+    font-weight: 700;
+}
+.tarjeta__frase{
+    font-size: 1rem;
+    color: var(--frase);
+}
+.tarjeta__autor{
+    font-size: 0.75rem;
+    color: var(--autor);
+}

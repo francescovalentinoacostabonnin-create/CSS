@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1</title>
+        <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Iniciando con CSS</h1>
+        <h2 id="Ejercicio">Ejercicio 1</h2>
+        <h2>Alumno: Francesco Valentino Acosta Bonnin</h2>
+        <h2>Curso: 4 <sup>1</sup></h2>
+    </header>
+    <main>
+        <h3><strong><u>¿Qué significa CSS?</u></strong></h3>
+        <p>CSS significa <strong>Cascading Style Sheets</strong>, que en español se traduce como <strong>Hojas de Estilo
+                en Cascada</strong>.</p>
+        <h3><strong><u>¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</u></strong></h3>
+        <p>CSS sirve para <strong>dar diseño y estilo a una página web</strong>, permitiendo modificar colores, tamaños,
+            fuentes, posiciones, márgenes, fondos, etc. El CSS es interpretado por los <em>navegadores web</em>, como
+            Google Chrome, Microsoft Edge, Firefox o Safari.</p>
+        <h3><strong><u>¿A qué se llama regla de CSS?</u></strong></h3>
+        <p>Una <strong>regla de CSS</strong> es una instrucción que indica qué estilos se deben aplicar a uno o varios
+            elementos HTML. Está formada principalmente por un selector y un conjunto de declaraciones.</p>
+        <h3><strong><u>¿Cuál es la anatomía de la regla de CSS?</u></strong></h3>
+        
+        <picture>
+            <img src="../assets/3217159a1494a40d25971d55cb3570ba.jpg" alt="Imagen" height="470" width="470">
+        </picture>
+        
+        <dl>
+            <dt><strong>Selector:</strong></dt>
+            <dd>Indica qué elemento o elementos HTML se van a modificar.</dd>
+
+            <dt><strong>Regla:</strong></dt>
+            <dd>Es el conjunto completo que indica qué estilos se aplicarán.</dd>
+
+            <dt><strong>Declaración:</strong></dt>
+            <dd>Es una instrucción formada por una propiedad y un valor.</dd>
+
+            <dt><strong>Propiedad:</strong></dt>
+            <dd>Indica qué característica del elemento se quiere modificar.</dd>
+
+            <dt><strong>Valor:</strong></dt>
+            <dd>Indica qué valor tendrá la propiedad.</dd>
+
+            <dt><strong>Unidad:</strong></dt>
+            <dd>Indica cómo se mide un valor numérico, como px, %, em o rem.</dd>
+
+            <dt><strong>Función:</strong></dt> 
+            <dd>Permite realizar cálculos o utilizar una función dentro de un valor.</dd>
+        </dl>
+        <h3><strong><u>¿Qué es un selector en CSS?</u></strong></h3>
+        <p>Un selector es la parte de una regla CSS que permite <strong>seleccionar los elementos HTML</strong> a los que se les aplicará un determinado estilo.</p>
+        <h3><strong><u>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas,descendente.</u></strong></h3>
+        <ul>
+            <li>Selector de ID: se utiliza para seleccionar un elemento que tiene un identificador único. Se escribe con #.</li>
+            <li>Selector de clase: selecciona todos los elementos que tienen una determinada clase. Se escribe con .</li>
+            <li>Selector universal: selecciona todos los elementos de la página. Se representa con *.</li>
+            <li>Selector de etiqueta: selecciona todos los elementos de una determinada etiqueta HTML.</li>
+            <li>Selector descendente: selecciona elementos que se encuentran dentro de otro elemento.</li>
+        </ul>
+        <h3><strong><u>Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</u></strong></h3>
+        <ol>
+            <li>El navegador carga el HTML (por ejemplo, lo recibe de la red)</li>
+            <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria del ordenador.</li>
+            <li>Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes y los videos incrustados... ¡y también el CSS vinculado! JavaScript aparece un poco más adelante en el proceso</li>
+            <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector. Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué reglas deben aplicarse y a qué nodos en el DOM se les aplica el estilo según corresponda (este paso intermedio se llama árbol de renderización).</li>
+            <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las reglas.</li>
+            <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+        </ol>
+        <h3><strong><u>¿Cuáles son las tres formas para vincular CSS con HTML?</u></strong></h3>
+        <p>Las tres formas para vincular CSS con HTML son:</p>
+        <ul>
+            <li>CSS en línea (Inline): se escribe directamente dentro de la etiqueta HTML utilizando el atributo style. Se utiliza principalmente cuando se quiere aplicar un estilo específico a un solo elemento.</li>
+            <li>CSS interno: se escribe dentro de una etiqueta style, generalmente ubicada dentro del head del documento HTML. Permite aplicar estilos a varios elementos de una misma página.</li>
+            <li>CSS externo: los estilos se escriben en un archivo separado con extensión .css y luego se vinculan al documento HTML mediante la etiqueta link. Es la forma más utilizada cuando un sitio tiene varias páginas, porque permite compartir los mismos estilos entre ellas.</li>
+        </ul>
+    </main>
+</body>
+
+</html>
