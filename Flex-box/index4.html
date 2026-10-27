@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-Box4</title>
+    <style>
+        body {
+            background-color: #f3caca;
+            font-family: Arial, sans-serif;
+        }
+
+        /* EN baraja utilize las propiedades display:flex para convertirlo en un bloque, background color para darle color al fondo, border para darle un borde blanco de 5 pixeles align items para definir donde iria el contenido a lo alto y justify content para definir donde iria a lo ancho*/
+        .baraja {
+            display: flex;
+            background-color: lightgreen;
+            border: 5px solid white;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            border-radius: 8px;
+            width: 90%;
+            height: 180px;
+            margin: 30px auto;
+        }
+
+        .carta {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 60px;
+            border-radius: 3px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px #888;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="baraja">
+        <div class="carta">A♠</div>
+        <div class="carta">K♥</div>
+        <div class="carta">Q♦</div>
+        <div class="carta">J♣</div>
+        <div class="carta">10♠</div>
+    </main>
+</body>
+
+</html>

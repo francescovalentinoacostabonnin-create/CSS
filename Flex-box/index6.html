@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box6</title>
+
+    <style>
+        body {
+            background-color: #F4CCCC;
+            font-family: Arial, sans-serif;
+        }
+
+        .torneos {
+            background-color: #EEF2FC;
+            width: 90%;
+            margin: 20px auto;
+            padding: 5px;
+        }
+
+        .encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .encabezado p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .encabezado a {
+            color: #1687FF;
+            font-size: 8px;
+            text-decoration: none;
+        }
+
+        .lista {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .lista > div {
+            flex: 1;
+            min-width: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .lista p {
+            font-size: 9px;
+            margin: 7px 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="torneos">
+
+        <div class="encabezado">
+            <p>Próximos torneos y eventos</p>
+            <a href="#">Mostrar todo →</a>
+        </div>
+
+        <div class="lista">
+
+            <div>
+                <img src="../assets/FIFA_FWC26_Tournament-Thumbnail-4-3.avif" alt="Copa Mundial de la FIFA 2026">
+                <p>Copa Mundial de la FIFA 2026 <sup>TM</sup></p>
+            </div>
+
+            <div>
+                <img src="../assets/Tournament-thumbnail-4_3-1570px_1178px.avif" alt="Copa Mundial Femenina de la FIFA 2027">
+                <p>Copa Mundial Femenina de la FIFA 2027 <sup>TM</sup></p>
+            </div>
+
+            <div>
+                <img src="../assets/FU20WWC-2026-Tournament-Thumbnail.avif" alt="Copa Mundial Femenina Sub-20 de la FIFA Polonia 2026">
+                <p>Copa Mundial Femenina Sub-20 de la FIFA Polonia 2026 <sup>TM</sup></p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

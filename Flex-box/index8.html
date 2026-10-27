@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box8</title>
+
+    <style>
+        body {
+            background-color: #121314;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            max-width: 90%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        .encabezado {
+            color: white;
+            text-shadow: 0 2px 4px #eff3f7;
+            text-align: center;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .opciones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            border: 3px solid white;
+            height: 40px;
+            width: 200px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .opciones:hover {
+            color: black;
+            background-color: white;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .juegos {
+            display: flex;
+            flex-direction:initial;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Grandes Juegos de PS4 y PS5 ya disponibles o que llegarán pronto</h1>
+        </header>
+        <nav class="botones">
+            <a class="opciones" href="#">Nuevos Lanzamientos</a>
+            <a class="opciones" href="#">Próximamente</a>
+        </nav>
+        <article class="juegos">
+            <img src="../assets/Black Mith wukong.webp" alt="Black Mith Wukong">
+            <p>Black Mith wukong</p>
+        </article>
+        <article class="juegos">
+            <img src="../assets/Dragon ball xenoverse 2.webp" alt="Dragon ball xenoverse 2">
+            <p>Dragon ball xenoverse 2</p>
+        </article>
+        <article class="juegos">
+            <img src="../assets/Elden Ring.webp" alt="Elden Ring">
+            <p>Elden Ring</p>
+        </article>
+        <article class="juegos">
+            <img src="../assets/FC26.webp" alt="FC 26">
+            <p>FC 26</p>
+        </article>
+        <article class="juegos">
+            <img src="../assets/Ghost.webp" alt="Ghost">
+            <p>Ghost of</p>
+        </article>
+        <article class="juegos">
+            
+        </article>
+        <article class="juegos">
+
+        </article>
+        <article class="juegos">
+
+        </article>
+        <article class="juegos">
+            
+        </article>
+        <article class="juegos">
+
+        </article>
+    </main>
+
+</body>
+
+</html>

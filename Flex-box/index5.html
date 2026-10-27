@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-box5</title>
+    <style>
+        body {
+            background-color: #f3caca;
+            font-family: Arial, sans-serif;   
+        }
+        .header {
+            background-color: #B3DDB4;
+            max-height: 100px;
+            width: 100%;
+        }
+
+        .titulo {
+            font-family: 'Courier New', Courier, monospace;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            text-shadow: 0 2px 4px #888;
+        }
+
+        .navegacion {
+            background-color: #87CA89;
+            height: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            padding: 8px ;
+            border-radius: 3px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h3 class="titulo">Lista Horizontal con Flexbox</h3>
+        <nav class="navegacion">
+            <a href="#" class="boton">Botón 1</a>
+            <a href="#" class="boton">Botón 2</a>
+            <a href="#" class="boton">Botón 3</a>
+            <a href="#" class="boton">Botón 4</a>
+        </nav>
+    </header>
+</body>
+
+</html>

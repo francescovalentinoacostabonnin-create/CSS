@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box7</title>
+
+    <style>
+        body {
+            background-color: #F4CCCC;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            background-color: beige;
+            padding: 10px;
+            height: 150px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .tarjeta {
+            background-color: rgb(252, 252, 252);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 7px;
+            box-shadow: 0 2px 4px #b69595;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .tarjeta:nth-child(odd) {
+            color: rgb(255, 0, 0);
+        }
+
+        .tarjeta:nth-child(even):hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="contenedor">
+        <div class="tarjeta">1</div>
+        <div class="tarjeta">2</div>
+        <div class="tarjeta">3</div>
+        <div class="tarjeta">4</div>
+        <div class="tarjeta">5</div>
+        <div class="tarjeta">6</div>
+        <div class="tarjeta">7</div>
+        <div class="tarjeta">8</div>
+        <div class="tarjeta">9</div>
+        <div class="tarjeta">10</div>
+        <div class="tarjeta">11</div>
+        <div class="tarjeta">12</div>
+        <div class="tarjeta">13</div>
+        <div class="tarjeta">14</div>
+        <div class="tarjeta">15</div>
+    </main>
+
+</body>
+
+</html>
