@@ -1,0 +1,280 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e3e7ec;
+    font-family: Arial, sans-serif;
+    color: #101827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Inicio */
+body > section {
+    width: 80%;
+    max-width: 1100px;
+    background-color: white;
+    margin-top: 6px;
+    border: 1px solid #aab7c4;
+    display: flex;
+    flex-direction: column;
+}
+/* Trama y Elenco*/
+body > header,
+body > article,
+body > main,
+body > footer {
+    width: 80%;
+    max-width: 1100px;
+}
+/* Encabezado */
+header {
+    height: 62px;
+    background-color: #101827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 2px solid #aab7c4;
+}
+header section {
+    position: absolute;
+    left: 22px;
+    display: flex;
+    align-items: center;
+}
+/* Logo */
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Navegador */
+
+nav {
+    background-color: #1d3048;
+    border: 1px solid #344b64;
+    border-radius: 6px;
+    padding: 11px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #aab7c4;
+}
+/* Imagen Principal Inicio */
+article {
+    margin: 12px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+article img {
+    width: calc(100% - 36px);
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+/* Contenido Principal */
+main {
+    padding: 0 18px 22px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin: 5px 0;
+}
+h2 {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+/* secciones */
+main ul {
+    list-style: none;
+}
+main > section:has(> section > ul) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+section {
+    flex: 1;
+    min-width: 0;
+}
+section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+section li {
+    background-color: #f1f3f6;
+    border: 1px solid #aab7c4;
+    border-radius: 15px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: justify;
+    box-shadow: 0 3px 8px #00000010;
+}
+.sinopsis {
+    max-width: 100%;
+    flex: 1;
+    background-color: #f1f3f6;
+    border: 1px solid #aab7c4;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 3px 8px #00000010;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.Directores {
+    width: 100%;
+    flex: 1;
+    background-color: #f1f3f6;
+    border: 1px solid #aab7c4;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 3px 8px #00000010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+}
+.Directores:has(ul) {
+    flex: 0 0 135px;
+}
+.Directores ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+.Directores li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+}
+.directivos {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+main p {
+    font-size: 11px;
+    line-height: 1.65;
+    text-align: justify;
+}
+.sinopsis h2 {
+    margin-bottom: 14px;
+}
+
+/* Historia de su produccion */
+.Produccion {
+    background-color: #f1f3f6;
+    border: 1px solid #aab7c4;
+    border-radius: 23px;
+    padding: 17px 19px;
+    box-shadow: 0 3px 8px #00000010;
+}
+/* Pagina de elenco */
+.personaje {
+    width: 90px;
+    height: 105px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Pagina de premios */
+.premios {
+    width: 90px;
+    height: 105px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Pagina de episodios */
+.Temporada {
+    width: 90px;
+    height: 105px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+/* Pie de pagina */
+footer {
+    min-height: 65px;
+    background-color: #101827;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 22px;
+    border-top: 2px solid #aab7c4;
+}
+.PiedePagina {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.PiedePagina a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+.PiedePagina a:hover {
+    color: #aab7c4;
+}
+/* Pantallas pequeñas*/
+@media (max-width: 700px) {
+    body > section,
+    body > header,
+    body > article,
+    body > main,
+    body > footer {
+        width: 95%;
+    }
+    header {
+        height: auto;
+        padding: 12px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    header section {
+        position: static;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    }
+    .Directores ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer {
+        flex-direction: row;
+        gap: 12px;
+    }
