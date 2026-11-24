@@ -132,7 +132,7 @@ main>section:has(> section > ul) { /* Selecciona una sección que esté dentro d
 }
 
 section {
-    flex: 1;
+    flex: 1; /* Permite que el elemento crezca y ocupe el espacio disponible dentro del contenedor Flexbox. */
     min-width: 0;
 }
 
@@ -158,7 +158,7 @@ section li {
 
 .sinopsis {
     max-width: 100%;
-    flex: 1;
+    flex: 1; /* Permite que el elemento crezca y ocupe el espacio disponible dentro del contenedor Flexbox. */
     background-color: #f1f3f6;
     border: 1px solid #aab7c4;
     border-radius: 20px;
@@ -184,7 +184,7 @@ section li {
 }
 
 .Directores:has(ul) {
-    flex: 0 0 135px;
+    flex: 0 0 135px; /* Establece un tamaño fijo de 135px, evitando que el elemento crezca o se achique dentro del contenedor Flexbox. */
 }
 
 .Directores ul {
